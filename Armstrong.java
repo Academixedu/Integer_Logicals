@@ -1,59 +1,39 @@
-package Integer;
-
 import java.util.Scanner;
 
-public class Armstrong {
-//	counting the digits
-	
+public class Arm {
     public int countDigits(int num) {
-
-    	int count = 0;
+        int count = 0;
         while (num != 0) {
-//        	153
-//        	divide it until num becomes 0 
             num = num / 10;
-//            15
-//            add count by every iteration
             count++;
         }
         return count;
     }
-	public void Arm() {
-        int b;
-        int sum = 0;
+    public void checkArmstrong() {
         Scanner in = new Scanner(System.in);
         System.out.println("Give your Value");
         int a = in.nextInt();
-        int temp = a;
-        int n = countDigits(a); // Calculate the number of digits in the input number
         
-        while (a > 0) {
-            b = a % 10;
-//            initial power to 1
-            int power = 1;
-//            n states about number of numbers in given int
-            for (int i = 1; i <=n; i++) {
-//            	iterations starts from 0 and rasise to <n ex:
-                power *= b;
-//                power*=1*(3*3*3) three iterations if we take 153
-            }
-            sum += power;
-//            adding it it to sum variable
-            a = a / 10;
-//           by dividing it we can again get remianing value; 
+        int temp = a;
+        int n = countDigits(a);
+        
+        int sum = 0;
+        while (temp != 0) {
+            int digit = temp % 10;
+            sum += Math.pow(digit, n);
+            temp = temp / 10;
         }
-        if (temp == sum) {
-            System.out.println(temp + " is an Armstrong");
+
+        if (a == sum) {
+            System.out.println(a + " is an Armstrong number.");
         } else {
-            System.out.println(temp + " is not an Armstrong");
+            System.out.println(a + " is not an Armstrong number.");
         }
     }
-
-    // Method to count the number of digits in a number
-
 
     public static void main(String[] args) {
-        Armstrong m = new Armstrong();
-        m.Arm();
+        Arm m = new Arm();
+        m.checkArmstrong();
     }
 }
+
