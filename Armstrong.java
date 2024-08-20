@@ -1,5 +1,4 @@
-package Integer;
-
+//package Integer;
 import java.util.Scanner;
 
 public class Armstrong {
@@ -21,9 +20,9 @@ public class Armstrong {
 	public void Arm() {
         int b;
         int sum = 0;
-        Scanner in = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Give your Value");
-        int a = in.nextInt();
+        int a = sc.nextInt();
         int temp = a;
         int n = countDigits(a); // Calculate the number of digits in the input number
         

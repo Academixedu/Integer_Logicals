@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Perfectnumber {
 public static void main(String[] args) {
 	Scanner in=new Scanner(System.in);
@@ -9,7 +10,6 @@ public static void main(String[] args) {
 			temp=temp+i;
 			System.out.println(i);
 		}
-		
 	}
 	if(temp==a) {
 		System.out.println("Perfect Number"+a);
