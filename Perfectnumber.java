@@ -10,7 +10,6 @@ public static void main(String[] args) {
 			temp=temp+i;
 			System.out.println(i);
 		}
-		
 	}
 	if(temp==a) {
 		System.out.println("Perfect Number"+a);

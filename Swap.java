@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 public class Swap {
 	Scanner im =new Scanner(System.in);	

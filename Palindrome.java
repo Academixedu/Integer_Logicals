@@ -17,5 +17,6 @@ System.out.println("Palindrome------"+temp);
 else 
 {
 System.out.println("Reverse----"+temp);
-}	}
+}	
+}
 }

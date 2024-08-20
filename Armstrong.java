@@ -1,5 +1,4 @@
 //package Integer;
-
 import java.util.Scanner;
 
 public class Armstrong {
