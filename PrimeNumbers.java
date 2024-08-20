@@ -1,9 +1,9 @@
 import java.util.Scanner;
 public class PrimeNumbers {
 public static void main(String[] args) {
-	Scanner in=new Scanner(System.in);
+	Scanner sc=new Scanner(System.in);
 	System.out.println("Enter The Number");
-	int a=in.nextInt();
+	int a=sc10.nextInt();
 	int temp=0;
 	for(int i=2;i<a;i++) {
 	if(a%i!=0) {	
